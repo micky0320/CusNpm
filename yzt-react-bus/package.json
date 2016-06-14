@@ -1,0 +1,49 @@
+{
+  "name": "yzt-react-bus",
+  "version": "0.3.0",
+  "description": "for company, business module",
+  "intro": "暂时不提交到npm包管理器",
+  "main": "p.business.js",
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh",
+    "clean": "cd node_modules; find . -name .babelrc | grep -v packager | xargs rm"
+  },
+  "author": {
+    "name": "li.xx"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react-native": "^0.19.0",
+    "yzt-react-base": "*"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.3"
+  },
+  "_id": "yzt-react-bus@0.3.0",
+  "_shasum": "cce6486e5dd40150b96a955573896371cece8e94",
+  "_from": "yzt-react-bus@latest",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "creem",
+    "email": "creemli@sina.com"
+  },
+  "dist": {
+    "shasum": "cce6486e5dd40150b96a955573896371cece8e94",
+    "tarball": "https://registry.npmjs.org/yzt-react-bus/-/yzt-react-bus-0.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "creem",
+      "email": "creemli@sina.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/yzt-react-bus-0.3.0.tgz_1464315616005_0.9609425165690482"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/yzt-react-bus/-/yzt-react-bus-0.3.0.tgz"
+}

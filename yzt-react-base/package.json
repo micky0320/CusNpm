@@ -1,0 +1,48 @@
+{
+  "name": "yzt-react-base",
+  "version": "0.2.0",
+  "description": "for company, framework base",
+  "intro": "暂时不提交到npm包管理器",
+  "main": "lizard.p.js",
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh",
+    "clean": "cd node_modules; find . -name .babelrc | grep -v packager | xargs rm"
+  },
+  "author": {
+    "name": "li.xx"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react-native": "^0.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.3"
+  },
+  "_id": "yzt-react-base@0.2.0",
+  "_shasum": "c76fef5475d9d11bf70b1326b44c2e30cb67330a",
+  "_from": "yzt-react-base@latest",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.2",
+  "_npmUser": {
+    "name": "creem",
+    "email": "creemli@sina.com"
+  },
+  "dist": {
+    "shasum": "c76fef5475d9d11bf70b1326b44c2e30cb67330a",
+    "tarball": "https://registry.npmjs.org/yzt-react-base/-/yzt-react-base-0.2.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "creem",
+      "email": "creemli@sina.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/yzt-react-base-0.2.0.tgz_1464060197472_0.41621862282045186"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/yzt-react-base/-/yzt-react-base-0.2.0.tgz"
+}

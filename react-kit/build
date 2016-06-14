@@ -1,0 +1,80 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var path = require('path');
+var rootDir = process.cwd();
+var mode = process.argv[2];
+var pro = require('child_process');
+if (!mode) {
+  console.warn('Project Name should not be null!');
+  return;
+}
+
+fs.exists(mode, function (exists) {
+  if (exists) {
+    console.warn("文件夹已存在");
+    return false;
+  }
+
+  var cloneCmd = 'git clone https://github.com/Creemli/React-Kit ' + mode;
+  var installCmd = 'cd ' + mode + '; npm install';
+
+  var extendCmd = 'cd ' + mode + ';npm uninstall babel && npm install babel-cli && npm start';
+
+  console.log('Clone start');
+
+  pro.exec(cloneCmd, function(err, stdout) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('Clone success! \nStarting install npm packages');
+
+      pro.exec(installCmd, function(error) {
+        if (error) {
+          console.error(err);
+        } else {
+          console.log('Install Success! Project Complete');
+          pro.exec(extendCmd, function (err) {
+            if (err) {
+              console.error(err);
+            } else {
+
+            }
+          });
+        }
+      });
+    }
+  });
+
+});
+
+
+
+
+
+//if (/release|r/i.test(mode)) {
+//    mode = 'Release';
+//} else {
+//    mode = 'Debug';
+//}
+///**
+// * 使用msbuild编译，需在Windows环境变量加入如下路径：
+// * C:\Windows\Microsoft.NET\Framework\v4.0.30319
+// */
+//var command = 'msbuild /v:q /t:Rebuild /p:Configuration=' + mode + ';IntermediateOutputPath=' + projDir + '\\ ' + tuanCsproj;
+//require('child_process').exec(command, function (err) {
+//    if (err) {
+//        console.log(err);
+//    } else {
+//        console.log(mode + ' mode build success');
+//        try {
+//            fs.unlinkSync(path.join(projDir, 'Tuan.dll'));
+//            fs.unlinkSync(path.join(projDir, 'Tuan.pdb'));
+//            fs.unlinkSync(path.join(projDir, 'Tuan.csproj.FileListAbsolute.txt'));
+//            fs.unlinkSync(path.join(projDir, 'Tuan.csprojResolveAssemblyReference.cache'));
+//            fs.exists(path.join(projDir, 'Tuan.v12.suo')) && fs.unlinkSync(path.join(projDir, 'Tuan.v12.suo'));
+//        } catch (e) {
+//            console.log(e);
+//        }
+//    }
+//});
