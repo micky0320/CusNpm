@@ -10,6 +10,13 @@ if (!mode) {
   return;
 }
 
+var params = process.argv[3];
+var isNeedInstall = true;
+
+if (params === '--pure' || params === '-p') {
+  isNeedInstall = false;
+}
+
 fs.exists(mode, function (exists) {
   if (exists) {
     console.warn("文件夹已存在");
@@ -27,9 +34,9 @@ fs.exists(mode, function (exists) {
     if (err) {
       console.error(err);
     } else {
-      console.log('Clone success! \nStarting install npm packages');
+      console.log('Clone success!');
 
-      pro.exec(installCmd, function(error) {
+      isNeedInstall && (console.log('Starting install npm packages!'),pro.exec(installCmd, function(error) {
         if (error) {
           console.error(err);
         } else {
@@ -42,7 +49,7 @@ fs.exists(mode, function (exists) {
             }
           });
         }
-      });
+      }))
     }
   });
 
