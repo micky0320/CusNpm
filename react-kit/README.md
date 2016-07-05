@@ -21,11 +21,27 @@ npm start // use for dev, it will create a server and run your project
 npm run deploy  // package your project to /dist for deploying.
 ```
 
+changelog: @since 2016.7.4
+1. Add api module, 
+2. add getting the current environment.
+
+
+How to use Api module?
+1. Configure all the ajax request in **api/index.js**;
+2. Configure all the ajax request url in **api/ApiList.js**;
+3. Then you can use **import { getProductDetail } from 'api';** in redux actions;
+4. After all the above, you can dispatch your action in your view.
+
+How to use environment configuration?
+1. You can find the configuration and functions in **src/config.js*
+2. Also you can use the functions given by Config such as getEnv(), isMock() and so on;
+
 
 Things to be done:
 
-1. config different environment in project easily.
+~~1. config different environment in project easily.~~
 2. thinking ...
+3. please give some advices
 
 
 Then the terminal will show you the dev url like this: http://[YourIP]:3000/

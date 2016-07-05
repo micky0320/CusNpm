@@ -1,5 +1,5 @@
 {
-  "name": "yzt-react-bus",
+  "name": "@yzt/yzt-react-bus",
   "version": "0.3.0",
   "description": "for company, business module",
   "intro": "暂时不提交到npm包管理器",

@@ -1,5 +1,5 @@
 {
-  "name": "yzt-react-base",
+  "name": "@yzt/yzt-react-base",
   "version": "0.2.0",
   "description": "for company, framework base",
   "intro": "暂时不提交到npm包管理器",
