@@ -1,6 +1,6 @@
 {
   "name": "@yzt/cus-react-kit",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "start a new project quickly with this npm package",
   "main": "build",
   "scripts": {

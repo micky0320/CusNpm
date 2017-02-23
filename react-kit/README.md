@@ -1,29 +1,38 @@
 This is tool kit for starting a new ReactJS peoject quickly.
 All you need todo is the following:
 
-```js
+```javascript
 1. sudo npm install cus-react-kit -g;
 2. react-kit [ProjectName]
 ```
 
 It will take about 10 mins to download dependencies such as babel@6.5.0 , react-redux and so on;
 
+
 If you wanna to run  npm install & npm start by yourself, you can use:
 
-```js
-react-kit [ProjectName] --pure
+```javascript
+// 推荐用法, 后续使用yarn install 安装依赖
+react-kit [ProjectName] --pure      
 ```
 
 After project complete, you can use following commands
 
-```js
+```javascript
 npm start // use for dev, it will create a server and run your project
 npm run deploy  // package your project to /dist for deploying.
 ```
 
-changelog: @since 2016.7.4
-1. Add api module, 
-2. add getting the current environment.
+##  changelog: @since 2017.2.23
+
+* 1. Change our package shell to Yarn,
+* 2. This can fix the issues that it doesnot work after running 'npm install'
+* 3. Also yarn can help us remove the extraous or depecrated packages.  
+
+
+##  changelog: @since 2016.7.4
+* 1. Add api module, 
+* 2. add getting the current environment.
 
 
 How to use Api module?
