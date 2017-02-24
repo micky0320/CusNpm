@@ -23,6 +23,12 @@ npm start // use for dev, it will create a server and run your project
 npm run deploy  // package your project to /dist for deploying.
 ```
 
+## changelog @since 2017.2.23
+
+* Add hooks for the Api response code, avoiding developer use too many if/else to do the logic jobs.
+* see "How to use Api module"
+
+
 ##  changelog: @since 2017.2.23
 
 * 1. Change our package shell to Yarn,
@@ -35,13 +41,39 @@ npm run deploy  // package your project to /dist for deploying.
 * 2. add getting the current environment.
 
 
-How to use Api module?
+##  How to use Api module?
 1. Configure all the ajax request in **api/index.js**;
-2. Configure all the ajax request url in **api/ApiList.js**;
+2. Configure all the ajax request url in **api/ApiList.js**, and define the default responseCode settings or customer action type;
+```javascript
+const ApiList = {
+  PRODUCT_DETAIL: '/product/productDetailInfo.do',
+}
+
+
+//  默认配置, 可以针对不同的项目进行修改
+const defaultSettings = {
+  '0000': 'success',
+  // 5001, 5002 handle
+  '7004': 'login',
+  '1006': 'login',
+  '5001': 'closeService',
+  '5002': 'closeService',
+};
+
+const configList = {
+  // 每个接口的自定义配置(如需)
+  [ApiList.PRODUCT_DETAIL]: {
+    ...defaultSettings,
+    '7006': 'something',
+  }
+};
+
+```
+
 3. Then you can use **import { getProductDetail } from 'api';** in redux actions;
 4. After all the above, you can dispatch your action in your view.
 
-How to use environment configuration?
+##  How to use environment configuration?
 1. You can find the configuration and functions in **src/config.js*
 2. Also you can use the functions given by Config such as getEnv(), isMock() and so on;
 
