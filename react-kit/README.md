@@ -23,6 +23,12 @@ npm start // use for dev, it will create a server and run your project
 npm run deploy  // package your project to /dist for deploying.
 ```
 
+## changelog @since 2017.3.2
+
+* 增加测试代码, 使用mocha + enyzme + chai. 
+* 主要对reducer action进行测试, 部分页面也可以进行测试
+
+
 ## changelog @since 2017.2.23
 
 * Add hooks for the Api response code, avoiding developer use too many if/else to do the logic jobs.
