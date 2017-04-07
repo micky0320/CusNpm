@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="application/javascript" src="./bower_components/crypto-js/core.js"></script>
+    <script type="application/javascript" src="./bower_components/crypto-js/enc-utf8.js"></script>
+    <script type="application/javascript" src="./bower_components/crypto-js/enc-base64.js"></script>
+    <script type="application/javascript" src="./bower_components/crypto-js/cipher-core.js"></script>
+    <script type="application/javascript" src="./bower_components/crypto-js/aes.js"></script>
+</head>
+<body style="padding-top: 10px">
+
+<script>
+    const defaultOpts = {
+        RES_KEY: '1234567890123456',
+        iv: '16-Bytes--String',
+        PUBLIC_KEY: '',
+    };
+    this._resKey = CryptoJS.enc.Utf8.parse(defaultOpts.RES_KEY);
+    this._iv = CryptoJS.enc.Utf8.parse(defaultOpts.iv);
+    var decrypt = CryptoJS.AES.decrypt('VgFMHchbKrl7CIJT7jqRGs4MnDYy22GgYdiukM2oAZS/uVsDz6w1IPnUMZT+h0PFt20TljgR5VavpaCMdqmrSyNKY7t4DagDLcdFjvBeomGYatXFFAcUkbh//v8spFgQvNt52TmKwpVjbe9MyRV+dHIjk20mLImICdepQ67eZg3R8Ycdb21N0wHF5noImtCm7RJLK405VbllaJnZQt/yUMi99q6a8NuLbaBPUOe8W0jWVosjbM0l8VPXy3VslGMpdI+IbKEsU4zqUPX6bczE4RNBReDHb1/HM23qAx6gpbvy/ZUPgkbWq0tIKt1XwZf5B3kjQTArdf4K815kT12AHGonZ+0J/8xxNuYWdlMYbknWdSNPH1RkSiHV/3ep6lPqouGIvoRVVT+wwBv958EAsy+OmRavIzLz4gzj/3ULTz5d/SkP2/WPPQ80R1di6G1k4/ihAo+jAzW2N5jGkerMSOfzTm39yzuvzq8NAFt2gwqGD2O9Cd0ydFuBlhgaZHyuhG/iY8OUx1YSH7Xq83Sp5iuWzN7aL0KFX/LKa84USW8=',
+     this._resKey,
+      {iv: this._iv, mode:CryptoJS.mode.CBC,padding: CryptoJS.pad.Pkcs7});
+    var decryptedStr = (CryptoJS.enc.Utf8.stringify(decrypt).toString());
+
+    document.write(decryptedStr)
+
+</script>
+</body>
+
+
+</html>

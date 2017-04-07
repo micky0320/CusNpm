@@ -1,0 +1,16 @@
+{
+  "name": "@yzt/f_encrypt",
+  "version": "1.2.0",
+  "description": "封装F那边加密相关的方法",
+  "main": "main.es5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel main.js -o main.es5.js"
+  },
+  "author": "li.xx & F code",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "jsencrypt": "^2.3.1"
+  }
+}

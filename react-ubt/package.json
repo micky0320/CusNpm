@@ -1,0 +1,12 @@
+{
+  "name": "@yzt/react-ubt",
+  "version": "0.8.0",
+  "description": "一帐通埋点方法兼容版本, 解决otitle无法渲染问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs _native_h5.js -o native_h5.js --source-map native_h5.js.map -m -c"
+  },
+  "author": "li.xx",
+  "license": "ISC"
+}

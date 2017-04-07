@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/apple/.nvm/versions/node/v5.8.0/bin/node',
+1 verbose cli   '/Users/apple/.nvm/versions/node/v5.8.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@yzt/native_h5',
+1 verbose cli   '--registry=http://45.32.32.61:7001' ]
+2 info using npm@3.7.3
+3 info using node@v5.8.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @yzt/native_h5
+8 silly fetchNamedPackageData @yzt/native_h5
+9 silly mapToRegistry name @yzt/native_h5
+10 silly mapToRegistry scope (from package name) @yzt
+11 verbose mapToRegistry no registry URL found in name for scope @yzt
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://45.32.32.61:7001/
+14 silly mapToRegistry uri http://45.32.32.61:7001/@yzt%2fnative_h5
+15 verbose request uri http://45.32.32.61:7001/@yzt%2fnative_h5
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 11:35:20 AM
+18 verbose request id 633933056b33e1b1
+19 http request GET http://45.32.32.61:7001/@yzt%2fnative_h5
+20 info retry will retry, error on last attempt: Error: read ETIMEDOUT
+21 info attempt registry request try #2 at 11:50:04 AM
+22 http request GET http://45.32.32.61:7001/@yzt%2fnative_h5
+23 http 404 http://45.32.32.61:7001/@yzt%2fnative_h5
+24 verbose headers { 'x-current-requests': '1',
+24 verbose headers   'content-type': 'application/json; charset=utf-8',
+24 verbose headers   'x-readtime': '49',
+24 verbose headers   'content-length': '51',
+24 verbose headers   date: 'Mon, 05 Dec 2016 03:50:05 GMT',
+24 verbose headers   connection: 'keep-alive' }
+25 silly get cb [ 404,
+25 silly get   { 'x-current-requests': '1',
+25 silly get     'content-type': 'application/json; charset=utf-8',
+25 silly get     'x-readtime': '49',
+25 silly get     'content-length': '51',
+25 silly get     date: 'Mon, 05 Dec 2016 03:50:05 GMT',
+25 silly get     connection: 'keep-alive' } ]
+26 silly fetchPackageMetaData Error: 404 Not Found: @yzt/native_h5
+26 silly fetchPackageMetaData     at makeError (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+26 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:250:14)
+26 silly fetchPackageMetaData     at Request._callback (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+26 silly fetchPackageMetaData     at Request.self.callback (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+26 silly fetchPackageMetaData     at emitTwo (events.js:100:13)
+26 silly fetchPackageMetaData     at Request.emit (events.js:185:7)
+26 silly fetchPackageMetaData     at Request.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+26 silly fetchPackageMetaData     at emitOne (events.js:95:20)
+26 silly fetchPackageMetaData     at Request.emit (events.js:182:7)
+26 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+26 silly fetchPackageMetaData  error for @yzt/native_h5 { [Error: 404 Not Found: @yzt/native_h5] pkgid: '@yzt/native_h5', statusCode: 404, code: 'E404' }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Starting
+30 silly runTopLevelLifecycles Finishing
+31 silly install printInstalled
+32 verbose stack Error: 404 Not Found: @yzt/native_h5
+32 verbose stack     at makeError (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:250:14)
+32 verbose stack     at Request._callback (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+32 verbose stack     at Request.self.callback (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+32 verbose stack     at emitTwo (events.js:100:13)
+32 verbose stack     at Request.emit (events.js:185:7)
+32 verbose stack     at Request.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+32 verbose stack     at emitOne (events.js:95:20)
+32 verbose stack     at Request.emit (events.js:182:7)
+32 verbose stack     at IncomingMessage.<anonymous> (/Users/apple/.nvm/versions/node/v5.8.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+33 verbose statusCode 404
+34 verbose pkgid @yzt/native_h5
+35 verbose cwd /Users/apple/Desktop/NewStart/CusNpm/yzt-react-bus
+36 error Darwin 16.1.0
+37 error argv "/Users/apple/.nvm/versions/node/v5.8.0/bin/node" "/Users/apple/.nvm/versions/node/v5.8.0/bin/npm" "install" "@yzt/native_h5" "--registry=http://45.32.32.61:7001"
+38 error node v5.8.0
+39 error npm  v3.7.3
+40 error code E404
+41 error 404 Not Found: @yzt/native_h5
+42 error 404
+43 error 404 '@yzt/native_h5' is not in the npm registry.
+44 error 404 You should bug the author to publish it (or use the name yourself!)
+45 error 404 Note that you can also install from a
+46 error 404 tarball, folder, http url, or git url.
+47 verbose exit [ 1, true ]
