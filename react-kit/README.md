@@ -1,3 +1,4 @@
+
 This is tool kit for starting a new ReactJS peoject quickly.
 All you need todo is the following:
 
@@ -95,4 +96,4 @@ Then the terminal will show you the dev url like this: http://[YourIP]:3000/
 
 Just try it.
 
-If you have any problems, please concat me with wechat: Creemli. Or creemli@sina.com;
+If you have any problems, please concat me with wechat: Creemli.(creemli@sina.com) or Micky(360933793@qq.com);

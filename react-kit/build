@@ -23,7 +23,6 @@ fs.exists(mode, function (exists) {
     return false;
   }
 
-  console.log('micky0320')
   var cloneCmd = 'git clone https://github.com/micky0320/React-Kit ' + mode;
   var installCmd = 'cd ' + mode + '; npm install';
 
