@@ -1,6 +1,6 @@
 {
   "name": "@yzt/cus-react-kit",
-  "version": "2.4.0",
+  "version": "2.5.1",
   "description": "start a new project quickly with this npm package",
   "main": "build",
   "scripts": {
@@ -13,6 +13,6 @@
     "react",
     "kit"
   ],
-  "author": "creem",
+  "author": "360933793@qq.com",
   "license": "ISC"
 }
