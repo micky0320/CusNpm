@@ -1,3 +1,11 @@
+## update
+```javascript
+// 更新cus-react-kit包，以后生成时可以拿到最新的框架生成器
+1.npm install -g cnpm --registry=http://172.24.242.18:7001
+2.sudo cnpm install -g @yzt/cus-react-kit
+3.输入mac锁屏密码
+```
+
 
 This is tool kit for starting a new ReactJS peoject quickly.
 All you need todo is the following:
